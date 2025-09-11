@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos de ORIO y CIA - Material náutico, salvamento y seguridad marítima. Chalecos, bengalas, señalización IMO y banderas del mundo">
+    <meta name="keywords" content="productos, ORIO y CIA, material salvamento, material contra-incendios, señalización IMO, banderas mundo, chalecos, bengalas">
+    <meta name="author" content="ORIO y CIA">
+    <title>ORIO y CIA - Productos | Material Náutico y Seguridad Marítima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-anchor"></i> ORIO y CIA</h1>
+                <span class="tagline">Seguridad Marítima</span>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html" class="nav-link active">Productos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="material-salvamento.html">Material Salvamento</a></li>
+                            <li><a href="material-contraincendios.html">Material Contra-incendios</a></li>
+                            <li><a href="senalizacion-imo.html">Señalización IMO</a></li>
+                            <li><a href="banderas-mundo.html">Banderas del Mundo</a></li>
+                            <li><a href="pirotecnia.html">Pirotecnia</a></li>
+                            <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
+                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quienes.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="cta-button">
+                    <i class="fas fa-phone"></i> Contactar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-badge">
+                <i class="fas fa-box"></i>
+                <span>Catálogo Completo</span>
+            </div>
+            <h1 class="hero-title">Productos de <span class="highlight">Seguridad Marítima</span></h1>
+            <p class="hero-description">
+                Descubre nuestra amplia gama de productos certificados y homologados para la máxima seguridad en el mar
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-categories-grid">
+            <!-- Material de Salvamento -->
+            <div class="product-category" id="salvamento">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Material de Salvamento</h3>
+                        <p>Equipos esenciales para la supervivencia de los barcos en el mar</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/psalvavidas.png" alt="Chalecos Salvavidas">
+                            <div class="product-badge">Certificado IMO</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Chalecos Salvavidas</h4>
+                            <p>Chalecos inflables y tradicionales homologados según normativas SOLAS</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Certificación SOLAS</li>
+                                <li><i class="fas fa-check"></i> Material resistente al agua</li>
+                                <li><i class="fas fa-check"></i> Múltiples tallas disponibles</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="material-salvamento.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pirotecnia Marítima -->
+            <div class="product-category" id="pirotecnia">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Pirotecnia Marítima</h3>
+                        <p>Señales pirotécnicas de emergencia para situaciones marítimas críticas</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pirotecnia.jpg" alt="Pirotecnia Marítima">
+                            <div class="product-badge">Certificado IMO</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Pirotecnia Marítima</h4>
+                            <p>Bengalas, cohetes y señales fumígenas certificadas IMO para emergencias marítimas</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Certificación IMO</li>
+                                <li><i class="fas fa-check"></i> Máxima visibilidad</li>
+                                <li><i class="fas fa-check"></i> Resistente al agua</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="pirotecnia.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Material Contra-incendios -->
+            <div class="product-category" id="incendios">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Material Contra-incendios</h3>
+                        <p>Sistemas de protección contra incendios para embarcaciones</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pincendios.png" alt="Extintores Marítimos">
+                            <div class="product-badge">Certificado IMO</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Extintores Marítimos</h4>
+                            <p>Extintores portátiles y fijos para embarcaciones de todo tipo</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Certificación IMO</li>
+                                <li><i class="fas fa-check"></i> Resistente a la corrosión</li>
+                                <li><i class="fas fa-check"></i> Fácil mantenimiento</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="material-contraincendios.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Señalización IMO -->
+            <div class="product-category" id="senalizacion">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Señalización IMO</h3>
+                        <p>Señales y equipos de comunicación conforme a normativas internacionales</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pimo.png" alt="Señales Marítimas">
+                            <div class="product-badge">Certificado IMO</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Señales Marítimas</h4>
+                            <p>Señales de socorro, luces de navegación y reflectores radar</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Normativa IMO</li>
+                                <li><i class="fas fa-check"></i> Alta visibilidad</li>
+                                <li><i class="fas fa-check"></i> Resistente al agua salada</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="senalizacion-imo.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicaciones Náuticas -->
+            <div class="product-category" id="publicaciones">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Publicaciones Náuticas</h3>
+                        <p>Cartas náuticas, derroteros y guías para navegación segura</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pcartas.png" alt="Cartas Náuticas">
+                            <div class="product-badge">Actualizadas</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Cartas Náuticas</h4>
+                            <p>Cartas náuticas actualizadas y derroteros para navegación</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Información actualizada</li>
+                                <li><i class="fas fa-check"></i> Fácil lectura</li>
+                                <li><i class="fas fa-check"></i> Cobertura mundial</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="cartas-nauticas.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banderas del Mundo -->
+            <div class="product-category" id="banderas">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Banderas del Mundo</h3>
+                        <p>Banderas marítimas, nacionales y de señales para embarcaciones</p>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pbanderas.png" alt="Banderas Marítimas">
+                            <div class="product-badge">Material Premium</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Banderas Marítimas</h4>
+                            <p>Banderas nacionales, de señales y de socorro para embarcaciones</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Material resistente</li>
+                                <li><i class="fas fa-check"></i> Colores duraderos</li>
+                                <li><i class="fas fa-check"></i> Múltiples tamaños</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="contacto.html" class="btn btn-primary">Cotizar</a>
+                                <a href="banderas-mundo.html" class="btn btn-secondary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Necesitas una cotización personalizada?</h2>
+                <p>Nuestro equipo de expertos te ayudará a encontrar los productos perfectos para tu embarcación</p>
+                <div class="cta-actions">
+                    <a href="contacto.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calculator"></i>
+                        Solicitar Cotización
+                    </a>
+                    <a href="tel:+1234567890" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i>
+                        Llamar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-anchor"></i> ORIO y CIA</h3>
+                        <p>Especialistas en seguridad marítima desde 1990</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul class="footer-links">
+                        <li><a href="material-salvamento.html">Material Salvamento</a></li>
+                        <li><a href="material-contraincendios.html">Material Contra-incendios</a></li>
+                        <li><a href="senalizacion-imo.html">Señalización IMO</a></li>
+                        <li><a href="banderas-mundo.html">Banderas del Mundo</a></li>
+                        <li><a href="pirotecnia.html">Pirotecnia</a></li>
+                        <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#revision">Revisión Chalecos</a></li>
+                        <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
+                        <li><a href="servicios.html">Mantenimiento</a></li>
+                        <li><a href="servicios.html">Certificaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@orioycia.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Puerto Marítimo, Zona Portuaria</p>
+                        <p><i class="fas fa-clock"></i> Lun - Vie: 8:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 ORIO y CIA. Todos los derechos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

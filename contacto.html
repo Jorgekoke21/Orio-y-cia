@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con ORIO y CIA - Especialistas en material náutico, salvamento y seguridad marítima. Formulario de contacto y información de contacto">
+    <meta name="keywords" content="contacto, ORIO y CIA, salvamento marítimo, náutico, formulario contacto, cotización">
+    <meta name="author" content="ORIO y CIA">
+    <title>ORIO y CIA - Contacto | Especialistas en Seguridad Marítima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="contact-bg">
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-anchor"></i> ORIO y CIA</h1>
+                <span class="tagline">Seguridad Marítima</span>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html" class="nav-link">Productos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="material-salvamento.html">Material Salvamento</a></li>
+                            <li><a href="material-contraincendios.html">Material Contra-incendios</a></li>
+                            <li><a href="senalizacion-imo.html">Señalización IMO</a></li>
+                            <li><a href="banderas-mundo.html">Banderas del Mundo</a></li>
+                            <li><a href="pirotecnia.html">Pirotecnia</a></li>
+                            <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
+                        </ul>
+                </li>
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
+                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
+                    </ul>
+                </li>
+                    <li><a href="quienes.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </nav>
+            <div class="header-cta">
+                <a href="tel:+1234567890" class="cta-button">
+                    <i class="fas fa-phone"></i> Llamar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contacto Directo</span>
+                </div>
+                <h1 class="hero-title">¿Necesitas Asesoría en Seguridad Marítima?</h1>
+                <p class="hero-description">
+                    Nuestro equipo de expertos está listo para ayudarte con cualquier consulta sobre material náutico, 
+                    servicios de revisión o cotizaciones personalizadas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2><i class="fas fa-paper-plane"></i> Envíanos un Mensaje</h2>
+                        <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+                    </div>
+                    
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">
+                                    <i class="fas fa-user"></i> Nombre Completo *
+                                </label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Correo Electrónico *
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">
+                                    <i class="fas fa-phone"></i> Teléfono
+                                </label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">
+                                    <i class="fas fa-tag"></i> Asunto *
+                                </label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                                    <option value="salvamento">Material de Salvamento</option>
+                    <option value="senalizacion">Señalización IMO</option>
+                    <option value="banderas">Banderas del Mundo</option>
+                                    <option value="revision">Revisión de Equipos</option>
+                                    <option value="cotizacion">Cotización</option>
+                    <option value="otro">Otro</option>
+                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">
+                                <i class="fas fa-comment"></i> Mensaje *
+                            </label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required 
+                                placeholder="Describe tu consulta o necesidad específica..."></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha">
+                                    <i class="fas fa-calendar"></i> Fecha Preferida de Contacto
+                                </label>
+                <input type="date" id="fecha" name="fecha">
+                            </div>
+                            <div class="form-group">
+                                <label for="hora">
+                                    <i class="fas fa-clock"></i> Hora Preferida
+                                </label>
+                                <input type="time" id="hora" name="hora">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset class="services-fieldset">
+                                <legend>
+                                    <i class="fas fa-list"></i> Servicios de Interés
+                                </legend>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios" value="salvamento">
+                                        <span class="checkmark"></span>
+                                        Material de Salvamento
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios" value="senalizacion">
+                                        <span class="checkmark"></span>
+                                        Señalización IMO
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios" value="revision">
+                                        <span class="checkmark"></span>
+                                        Revisión de Chalecos
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios" value="compensacion">
+                                        <span class="checkmark"></span>
+                                        Compensación de Barcos
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="archivo">
+                                <i class="fas fa-paperclip"></i> Adjuntar Archivo (opcional)
+                            </label>
+                            <input type="file" id="archivo" name="archivo" class="file-input">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3><i class="fas fa-info-circle"></i> Información de Contacto</h3>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                                <span>Lun - Vie: 8:00 - 18:00</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@orioycia.com</p>
+                                <span>Respuesta en 24h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Dirección</h4>
+                                <p>Calle Conde Torrecedeira<br>Vigo, España</p>
+                                <span>Visitas con cita previa</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horarios</h4>
+                                <p>Lunes - Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 14:00</p>
+                                <span>Emergencias 24/7</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="why-choose-us">
+                        <h3><i class="fas fa-star"></i> ¿Por qué elegirnos?</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 30+ años de experiencia</li>
+                            <li><i class="fas fa-check"></i> Certificaciones IMO</li>
+                            <li><i class="fas fa-check"></i> Soporte técnico 24/7</li>
+                            <li><i class="fas fa-check"></i> Entrega rápida</li>
+                            <li><i class="fas fa-check"></i> Garantía de calidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Ubicación</h2>
+                <p>Encuéntranos en el corazón de Vigo</p>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5!2d-8.7226!3d42.2406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f9a4b8b8b8b8b%3A0x0!2sCalle%20Conde%20Torrecedeira%2C%20Vigo%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="map-details">
+                    <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                    <p>Calle Conde Torrecedeira<br>Vigo, Pontevedra, España</p>
+                </div>
+                <div class="map-details">
+                    <h3><i class="fas fa-phone"></i> Contacto</h3>
+                    <p>+34 986 XXX XXX<br>info@orioycia.com</p>
+                </div>
+                <div class="map-details">
+                    <h3><i class="fas fa-clock"></i> Horarios</h3>
+                    <p>Lun - Vie: 8:00 - 18:00<br>Sáb: 9:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-anchor"></i> ORIO y CIA</h3>
+                        <p>Especialistas en seguridad marítima desde 1990</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul class="footer-links">
+                        <li><a href="material-salvamento.html">Material Salvamento</a></li>
+                        <li><a href="material-contraincendios.html">Material Contra-incendios</a></li>
+                        <li><a href="senalizacion-imo.html">Señalización IMO</a></li>
+                        <li><a href="banderas-mundo.html">Banderas del Mundo</a></li>
+                        <li><a href="pirotecnia.html">Pirotecnia</a></li>
+                        <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#revision">Revisión Chalecos</a></li>
+                        <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
+                        <li><a href="servicios.html">Mantenimiento</a></li>
+                        <li><a href="servicios.html">Certificaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@orioycia.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Puerto Marítimo, Zona Portuaria</p>
+                        <p><i class="fas fa-clock"></i> Lun - Vie: 8:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 ORIO y CIA. Todos los derechos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
