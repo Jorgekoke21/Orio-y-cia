@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="pirotecnia-theme">
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
@@ -45,6 +45,84 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <img src="img/logo dibujo (1).png" alt="ORIO Y CIA" class="mobile-logo-img">
+                    <span class="mobile-logo-text">ORIO Y CIA</span>
+                </div>
+                <button class="mobile-menu-close" id="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="nav-grid">
+                <a href="index.html" class="nav-card home-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Inicio</h3>
+                        <p>Página principal</p>
+                    </div>
+                </a>
+                
+                <a href="productos.html" class="nav-card products-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Productos</h3>
+                        <p>Material náutico</p>
+                    </div>
+                </a>
+                
+                <a href="servicios.html" class="nav-card services-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Servicios</h3>
+                        <p>Mantenimiento</p>
+                    </div>
+                </a>
+                
+                <a href="quienes.html" class="nav-card about-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Nosotros</h3>
+                        <p>Conócenos</p>
+                    </div>
+                </a>
+                
+                <a href="contacto.html" class="nav-card contact-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Contacto</h3>
+                        <p>Hablemos</p>
+                    </div>
+                </a>
+                
+                <a href="tel:+1234567890" class="nav-card phone-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Llamar</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <!-- Hero Section -->
@@ -79,17 +157,13 @@
     <!-- Products Section -->
     <section class="products-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Productos de Pirotécnia IMO</h2>
-                <p>Distribuidores autorizados de las principales marcas en pirotecnia</p>
-            </div>
             
             <div class="cartas-grid">
                 <!-- Bengalas de Mano -->
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/bengala.png" alt="Bengalas de Mano Marítimas">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Bengala de Mano</h3>
@@ -114,7 +188,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/cohete paracaidas.png" alt="Cohetes de Paracaídas">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Cohete con Paracaídas</h3>
@@ -139,7 +213,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/bote de humo.png" alt="Señales Fumígenas Marítimas">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Bote de humo IMO</h3>
@@ -164,7 +238,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/kit equipo litoral.png" alt="Kit Completo de Bengalas">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Equipos zonas de navegación</h3>
@@ -185,7 +259,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/lanzacabos solas.png" alt="Lanzacabos SOLAS Marítimo">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Lanzacabos SOLAS</h3>
@@ -206,7 +280,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/manoverboard.png" alt="Man Overboard PAINS WESSEX">
-                        <div class="product-badge">Certificado SOLAS</div>
+                        <div class="product-badge">SOLAS</div>
                     </div>
                     <div class="product-content">
                         <h3>Man Overboard PAINS WESSEX</h3>
@@ -345,5 +419,145 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Manager
+        class MobileMenuManager {
+            constructor() {
+                this.mobileMenu = document.getElementById('mobile-menu');
+                this.menuOverlay = document.getElementById('menu-overlay');
+                this.mobileMenuClose = document.getElementById('mobile-menu-close');
+                this.logoDibujo = document.querySelector('.logo-dibujo');
+                this.isOpen = false;
+                this.isMobile = window.innerWidth <= 1024;
+                
+                this.init();
+            }
+            
+            init() {
+                // Solo inicializar en móvil/tablet
+                if (this.isMobile) {
+                    this.setupEventListeners();
+                    this.addMobileClickableClass();
+                }
+                
+                // Escuchar cambios de tamaño de ventana
+                window.addEventListener('resize', () => {
+                    this.handleResize();
+                });
+            }
+            
+            setupEventListeners() {
+                // Click en el logo para abrir menú
+                if (this.logoDibujo) {
+                    this.logoDibujo.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.openMenu();
+                    });
+                }
+                
+                // Click en el botón de cerrar
+                if (this.mobileMenuClose) {
+                    this.mobileMenuClose.addEventListener('click', () => {
+                        this.closeMenu();
+                    });
+                }
+                
+                // Click en el overlay para cerrar
+                if (this.menuOverlay) {
+                    this.menuOverlay.addEventListener('click', () => {
+                        this.closeMenu();
+                    });
+                }
+                
+                // Tecla ESC para cerrar
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && this.isOpen) {
+                        this.closeMenu();
+                    }
+                });
+                
+                // Click en las tarjetas de navegación para cerrar el menú
+                const navCards = document.querySelectorAll('.nav-card');
+                navCards.forEach(card => {
+                    card.addEventListener('click', () => {
+                        // Pequeño delay para permitir la navegación
+                        setTimeout(() => {
+                            this.closeMenu();
+                        }, 100);
+                    });
+                });
+            }
+            
+            addMobileClickableClass() {
+                if (this.logoDibujo) {
+                    this.logoDibujo.classList.add('mobile-clickable');
+                }
+            }
+            
+            openMenu() {
+                if (!this.isMobile) return;
+                
+                this.isOpen = true;
+                this.mobileMenu.classList.add('active');
+                this.menuOverlay.classList.add('active');
+                
+                // Prevenir scroll del body
+                document.body.style.overflow = 'hidden';
+                
+                // Feedback táctil si está disponible
+                if (navigator.vibrate) {
+                    navigator.vibrate(50);
+                }
+                
+                // Animación escalonada de las tarjetas
+                this.animateCards();
+            }
+            
+            closeMenu() {
+                this.isOpen = false;
+                this.mobileMenu.classList.remove('active');
+                this.menuOverlay.classList.remove('active');
+                
+                // Restaurar scroll del body
+                document.body.style.overflow = '';
+            }
+            
+            animateCards() {
+                const cards = document.querySelectorAll('.nav-card');
+                cards.forEach((card, index) => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.3s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }
+            
+            handleResize() {
+                const wasMobile = this.isMobile;
+                this.isMobile = window.innerWidth <= 1024;
+                
+                // Si cambió de móvil a desktop, cerrar menú
+                if (wasMobile && !this.isMobile) {
+                    this.closeMenu();
+                }
+                
+                // Si cambió de desktop a móvil, añadir clase clickeable
+                if (!wasMobile && this.isMobile) {
+                    this.addMobileClickableClass();
+                }
+            }
+        }
+        
+        // Inicializar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', () => {
+            new MobileMenuManager();
+        });
+    </script>
+    <script src="mobile-menu.js"></script>
 </body>
 </html>

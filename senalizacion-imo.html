@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="etiquetas-theme">
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
@@ -45,6 +45,84 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <img src="img/logo dibujo (1).png" alt="ORIO Y CIA" class="mobile-logo-img">
+                    <span class="mobile-logo-text">ORIO Y CIA</span>
+                </div>
+                <button class="mobile-menu-close" id="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="nav-grid">
+                <a href="index.html" class="nav-card home-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Inicio</h3>
+                        <p>Página principal</p>
+                    </div>
+                </a>
+                
+                <a href="productos.html" class="nav-card products-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Productos</h3>
+                        <p>Material náutico</p>
+                    </div>
+                </a>
+                
+                <a href="servicios.html" class="nav-card services-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Servicios</h3>
+                        <p>Mantenimiento</p>
+                    </div>
+                </a>
+                
+                <a href="quienes.html" class="nav-card about-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Nosotros</h3>
+                        <p>Conócenos</p>
+                    </div>
+                </a>
+                
+                <a href="contacto.html" class="nav-card contact-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Contacto</h3>
+                        <p>Hablemos</p>
+                    </div>
+                </a>
+                
+                <a href="tel:+1234567890" class="nav-card phone-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Llamar</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <!-- Hero Section -->
@@ -54,7 +132,7 @@
                 <i class="fas fa-flag"></i>
                 <span>Señalización IMO</span>
             </div>
-            <h1 class="hero-title">Etiquetas IMO para <span class="highlight">Barcos y Náutica</span></h1>
+            <h1 class="hero-title">Etiquetas IMO <span class="highlight">Barcos y Náutica</span></h1>
             <p class="hero-description">
                 Etiquetas de advertencia, señalización contra incendios, obligación de seguridad, 
                 salvamento y socorro conforme a normativas internacionales IMO para embarcaciones.
@@ -79,17 +157,13 @@
     <!-- Products Section Mejorada -->
     <section class="products-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Etiquetas IMO Certificadas para Barcos y Embarcaciones</h2>
-                <p>Señalización marítima fotoluminiscente conforme a normativas SOLAS e IMO para máxima seguridad a bordo</p>
-            </div>
             
             <div class="cartas-grid">
                 <!-- Señalización Marítima -->
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/etiquetas IMO/etiqueta señalizacion maritima.png" alt="Señalización Marítima IMO y Código Internacional">
-                        <div class="product-badge">Certificado IMO</div>
+                        <div class="product-badge">IMO</div>
                     </div>
                     <div class="product-content">
                         <h3>Señalización Salvamento Marítimo y Etiquetas IMO</h3>
@@ -114,7 +188,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/etiquetas IMO/etiqueta contra incendio.png" alt="Señales IMO Contra Incendios y Extinción para Embarcaciones">
-                        <div class="product-badge">Certificado SOLAS</div>
+                        <div class="product-badge">SOLAS</div>
                     </div>
                     <div class="product-content">
                         <h3>Señales IMO Contra Incendios para Embarcaciones</h3>
@@ -139,7 +213,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/etiquetas IMO/etiqueta obligacion y seguridad.png" alt="Etiquetas IMO de Obligación y Seguridad Marítima">
-                        <div class="product-badge">Certificado SOLAS</div>
+                        <div class="product-badge">SOLAS</div>
                     </div>
                     <div class="product-content">
                         <h3>Etiquetas IMO de Seguridad y Uso Obligatorio</h3>
@@ -164,7 +238,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/etiquetas IMO/etiqueta salvamento y socorro.png" alt="Etiquetas IMO de Salvamento y Socorro para Embarcaciones">
-                        <div class="product-badge">Certificado SOLAS</div>
+                        <div class="product-badge">SOLAS</div>
                     </div>
                     <div class="product-content">
                         <h3>Etiquetas IMO de Señalización y Socorro para Barcos</h3>
@@ -189,7 +263,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="img/etiquetas IMO/etiquetas advertencia.png" alt="Etiquetas IMO de Advertencia de Peligro para Barcos">
-                        <div class="product-badge">Certificado SOLAS</div>
+                        <div class="product-badge">SOLAS</div>
                     </div>
                     <div class="product-content">
                         <h3>Etiquetas IMO de Peligro y Advertencia para Barcos</h3>
@@ -357,5 +431,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="mobile-menu.js"></script>
 </body>
 </html>

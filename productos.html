@@ -50,6 +50,84 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <img src="img/logo dibujo (1).png" alt="ORIO Y CIA" class="mobile-logo-img">
+                    <span class="mobile-logo-text">ORIO Y CIA</span>
+                </div>
+                <button class="mobile-menu-close" id="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="nav-grid">
+                <a href="index.html" class="nav-card home-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Inicio</h3>
+                        <p>Página principal</p>
+                    </div>
+                </a>
+                
+                <a href="productos.html" class="nav-card products-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Productos</h3>
+                        <p>Material náutico</p>
+                    </div>
+                </a>
+                
+                <a href="servicios.html" class="nav-card services-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Servicios</h3>
+                        <p>Mantenimiento</p>
+                    </div>
+                </a>
+                
+                <a href="quienes.html" class="nav-card about-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Nosotros</h3>
+                        <p>Conócenos</p>
+                    </div>
+                </a>
+                
+                <a href="contacto.html" class="nav-card contact-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Email</h3>
+                        <p>Escríbenos</p>
+                    </div>
+                </a>
+                
+                <a href="tel:+1234567890" class="nav-card phone-card">
+                    <div class="nav-card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="nav-card-content">
+                        <h3>Llamar</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <!-- Hero Section -->
@@ -392,5 +470,6 @@
             }
         });
     </script>
+    <script src="mobile-menu.js"></script>
 </body>
 </html>
