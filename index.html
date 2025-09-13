@@ -14,15 +14,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="index">
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <h1><i class="fas fa-anchor"></i> ORIO Y CIA</h1>
-                <span class="tagline">MATERIAL SALVAMENTO & NÁUTICO</span>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo dibujo (1).png" alt="Logo ORIO Y CIA" class="logo-dibujo">
+                    <img src="img/logo escritura.png" alt="ORIO Y CIA" class="logo-escritura">
+                </a>
             </div>
             <nav class="main-nav">
-                <ul class="nav-list">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="index.html" class="nav-link active">Inicio</a></li>
                     <li class="dropdown">
                         <a href="productos.html" class="nav-link">Productos <i class="fas fa-chevron-down"></i></a>
@@ -35,13 +42,7 @@
                             <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
                         </ul>
             </li>
-                    <li class="dropdown">
-                        <a href="servicios.html" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
-                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
-                </ul>
-            </li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="quienes.html" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="contacto.html" class="nav-link">Contacto</a></li>
         </ul>
@@ -63,24 +64,23 @@
                     <span>30+ años de experiencia</span>
                 </div>
                 <h1 class="hero-title">
-                    Especialistas en <span class="highlight">Seguridad Marítima</span> y Material Náutico
+                    Especialistas en <span class="highlight">Seguridad Marítima</span> y Material Náutico Certificado
                 </h1>
                 <p class="hero-description">
-                    Ofrecemos equipos de salvamento, señalización IMO y servicios de seguridad marítima 
-                    con la más alta calidad y certificaciones internacionales.
+                    Más de 30 años ofreciendo material náutico y servicios de seguridad marítima para Astilleros, Puertos, Flotas Pesqueras, Embarcaciones profesionales y de Recreo
                 </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">30+</span>
-                        <span class="stat-label">Años de experiencia</span>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-ship"></i>
+                        <span>Flotas</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Clientes satisfechos</span>
+                    <div class="feature-item astilleros-item">
+                        <i class="fas fa-anchor"></i>
+                        <span>Astilleros y Puertos</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Soporte técnico</span>
+                    <div class="feature-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Precios personalizados</span>
                     </div>
                 </div>
                 <div class="hero-actions">
@@ -110,74 +110,74 @@
     <!-- Products Preview Section -->
     <section class="products-preview">
         <div class="container">
-            <h2>Nuestros Productos Destacados</h2>
+            <h2>Nuestros Productos</h2>
             <p>Equipos de seguridad marítima certificados y homologados</p>
             <div class="products-preview-grid">
-                <div class="product-preview-card">
+                <a href="material-salvamento.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/psalvavidas.png" alt="Equipos de Salvamento Marítimo">
+                        <img src="img/salvamento maritimo index.png" alt="Equipos de Salvamento Marítimo">
                         <div class="product-preview-badge">Certificado IMO</div>
                     </div>
                     <div class="product-preview-content">
-                        <h3>Equipos de Salvamento Marítimo</h3>
+                        <h3>Material Salvamento Marítimo</h3>
                         <p>Chalecos salvavidas, trajes de supervivencia y equipos de rescate certificados SOLAS para máxima seguridad.</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="product-preview-card">
+                <a href="pirotecnia.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/pirotecnia.jpg" alt="Pirotecnia Marítima">
+                        <img src="img/pirotecnia index.png" alt="Pirotecnia Marítima">
                         <div class="product-preview-badge">Certificado IMO</div>
                     </div>
                     <div class="product-preview-content">
                         <h3>Pirotecnia Marítima</h3>
-                        <p>Bengalas, cohetes y señales fumígenas certificadas IMO para emergencias marítimas y señalización de socorro.</p>
+                        <p>Te ayudamos a seleccionar el kit obligatorio para tu barco. Disponemos de bengalas, cohetes y señales fumígenas homologadas IMO</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="product-preview-card">
+                <a href="material-contraincendios.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/pincendios.png" alt="Extintores Marítimos">
+                        <img src="img/contraincendios index.png" alt="Extintores Marítimos">
                         <div class="product-preview-badge">Certificado IMO</div>
                     </div>
                     <div class="product-preview-content">
-                        <h3>Extintores Marítimos</h3>
-                        <p>Extintores portátiles y fijos para embarcaciones, resistentes a la corrosión y fáciles de mantener.</p>
+                        <h3>Material Contra Incendios</h3>
+                        <p>Extintores y sistemas contra incendios marítimos certificados. Te asesoramos para que tengas la máxima seguridad a bordo</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="product-preview-card">
+                <a href="senalizacion-imo.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/pimo.png" alt="Señalización IMO">
+                        <img src="img/etiquetas IMO/etiquetas navegacion index.png" alt="Señalización IMO">
                         <div class="product-preview-badge">Certificado IMO</div>
                     </div>
                     <div class="product-preview-content">
                         <h3>Señalización IMO</h3>
-                        <p>Señales de socorro, luces de navegación y reflectores radar conforme a normativas internacionales.</p>
+                        <p>Etiquetas y señales IMO oficiales para cumplir normativas internacionales. Te guiamos en la selección más adecuada según tu embarcación</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="product-preview-card">
+                <a href="cartas-nauticas.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/pcartas.png" alt="Cartas Náuticas">
+                        <img src="img/cartas/cartas libros.png" alt="Cartas Náuticas">
                         <div class="product-preview-badge">Actualizadas</div>
                     </div>
                     <div class="product-preview-content">
-                        <h3>Cartas Náuticas</h3>
-                        <p>Cartas náuticas actualizadas y derroteros para navegación segura con información precisa y confiable.</p>
+                        <h3>Cartas Náuticas IHM</h3>
+                        <p>Cartas náuticas IHM para garantizar tu seguridad en el mar. Proporcionamos todas las publicaciones oficiales que tu barco necesita para estar siempre en regla</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="product-preview-card">
+                <a href="banderas-mundo.html" class="product-preview-card">
                     <div class="product-preview-image">
-                        <img src="img/pbanderas.png" alt="Banderas Marítimas">
+                        <img src="img/banderas/corona.png" alt="Banderas Marítimas">
                         <div class="product-preview-badge">Material Premium</div>
                     </div>
                     <div class="product-preview-content">
                         <h3>Banderas del Mundo</h3>
-                        <p>Banderas nacionales, de señales y de socorro para embarcaciones con material resistente y duradero.</p>
+                        <p>Banderas nacionales de todos los países en múltiples tamaños. Soluciones a medida para barcos, flotas pesqueras, instituciones, organismos oficiales y hoteles</p>
                     </div>
-                </div>
+                </a>
                 
             </div>
             <div class="products-preview-cta">
@@ -197,7 +197,7 @@
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="img/chalecos.png" alt="Revisión de Equipos">
+                        <img src="img/revision.png" alt="Revisión de Equipos">
                         <div class="product-badge">Certificado IMO</div>
                     </div>
                     <div class="product-content">
@@ -217,7 +217,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="img/compas.png" alt="Compensación de Barcos">
+                        <img src="img/compensacion.png" alt="Compensación de Barcos">
                         <div class="product-badge">Especializado</div>
                     </div>
                     <div class="product-content">
@@ -237,7 +237,7 @@
                 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="img/formulario.jpg" alt="Consultoría Marítima">
+                        <img src="img/asesoramiento.png" alt="Consultoría Marítima">
                         <div class="product-badge">Profesional</div>
                     </div>
                     <div class="product-content">
@@ -316,28 +316,28 @@
                     <div class="feature-icon">
                         <i class="fas fa-ship"></i>
                     </div>
-                    <h3>+30 Años Suministrando Flotas Pesqueras</h3>
+                    <h3 class="feature-title-centered">+30 Años Suministrando Flotas Pesqueras</h3>
                     <p>Proveemos equipos de seguridad a las principales flotas pesqueras y barcos pesqueros desde hace más de tres décadas</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Relaciones Sólidas con el Sector</h3>
+                    <h3 class="feature-title-centered">Relaciones Sólidas con el Sector</h3>
                     <p>Mantenemos relaciones sólidas con armadores, capitanes y empresas del sector marítimo, siempre comprometidos con la calidad</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
-                    <h3>Asesoramiento Profesional</h3>
+                    <h3 class="feature-title-centered">Asesoramiento Profesional</h3>
                     <p>Servicio de asesoramiento profesional especializado y elaboración de presupuestos personalizados para cada proyecto</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h3>Entrega Rápida</h3>
+                    <h3 class="feature-title-centered">Entrega Rápida</h3>
                     <p>Despacho inmediato para emergencias y pedidos urgentes, garantizando la disponibilidad cuando más se necesita</p>
                 </div>
             </div>
@@ -488,6 +488,30 @@
                 </div>
             </div>
         </div>
-</footer>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navList = document.getElementById('nav-list');
+            
+            if (mobileMenuToggle && navList) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navList.classList.toggle('mobile-menu-open');
+                    mobileMenuToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = navList.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navList.classList.remove('mobile-menu-open');
+                        mobileMenuToggle.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

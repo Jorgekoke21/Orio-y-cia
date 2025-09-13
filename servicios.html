@@ -15,8 +15,10 @@
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <h1><i class="fas fa-anchor"></i> ORIO y CIA</h1>
-                <span class="tagline">Seguridad Marítima</span>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo dibujo (1).png" alt="Logo ORIO Y CIA" class="logo-dibujo">
+                    <img src="img/logo escritura.png" alt="ORIO Y CIA" class="logo-escritura">
+                </a>
             </div>
             <nav class="main-nav">
                 <ul class="nav-list">
@@ -32,13 +34,7 @@
                             <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
                         </ul>
                 </li>
-                    <li class="dropdown">
-                        <a href="servicios.html" class="nav-link active">Servicios <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
-                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
-                            <li><a href="servicios.html#consultoria">Consultoría Marítima</a></li>
-                    </ul>
+                    <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
                 </li>
                     <li><a href="quienes.html" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="contacto.html" class="nav-link">Contacto</a></li>
@@ -53,17 +49,30 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="services-hero">
+    <section class="category-hero">
         <div class="container">
             <div class="hero-badge">
                 <i class="fas fa-tools"></i>
                 <span>Servicios Especializados</span>
             </div>
-            <h1 class="hero-title">Servicios de <span class="highlight">Mantenimiento Marítimo</span></h1>
+            <h1 class="hero-title">Asesoramiento y Servicios <span class="highlight">Marítimos Certificados</span></h1>
             <p class="hero-description">
-                Ofrecemos servicios profesionales de revisión, mantenimiento y certificación 
-                para garantizar que tu embarcación cumpla con todas las normativas de seguridad.
+                Revisión, Mantenimiento y Asesoría profesional especializada para empresas y embarcaciones pesqueras
             </p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-ship"></i>
+                    <span>Flotas pesqueras</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-anchor"></i>
+                    <span>Astilleros y puertos</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Precios personalizados</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -76,48 +85,37 @@
             <div class="service-detail" id="revision">
                 <div class="service-content">
                     <div class="service-info">
-                        <div class="service-icon">
-                            <i class="fas fa-life-ring"></i>
+                        <div class="service-icon revision-icon">
+                            <i class="fas fa-tools"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Revisión de Chalecos y Trajes de Seguridad</h3>
+                            <h3>Revisión y Mantenimiento de Equipos de Salvamento</h3>
                             <p class="service-description">
-                                Servicio profesional de inspección, mantenimiento y certificación de chalecos salvavidas, 
-                                trajes de supervivencia y equipos de seguridad marítima.
+                                Servicio integral de inspección y mantenimiento de chalecos salvavidas, 
+                                trajes de supervivencia y aros salvavidas. Mantenimiento preventivo certificado, clave para astilleros y armadores
                             </p>
                             <div class="service-features">
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Inspección visual completa</span>
+                                    <span>Trajes de supervivencia</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Pruebas de inflado automático</span>
+                                    <span>Chalecos salvavidas</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Verificación de válvulas y mecanismos</span>
+                                    <span>Aros salvavidas</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Certificación oficial IMO</span>
+                                    <span>Pruebas de inflado y rotulación</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="service-image">
-                        <img src="img/chalecos.png" alt="Revisión de Chalecos">
-                        <div class="service-overlay">
-                            <div class="overlay-content">
-                                <h4>Proceso de Revisión</h4>
-                                <ul>
-                                    <li>Inspección visual detallada</li>
-                                    <li>Pruebas de funcionamiento</li>
-                                    <li>Reemplazo de componentes</li>
-                                    <li>Certificación final</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img src="img/revision.png" alt="Revisión de Chalecos">
                     </div>
                 </div>
                 <div class="service-actions">
@@ -136,45 +134,34 @@
             <div class="service-detail" id="compensacion">
                 <div class="service-content">
                     <div class="service-image">
-                        <img src="img/compas.png" alt="Compensación de Barcos">
-                        <div class="service-overlay">
-                            <div class="overlay-content">
-                                <h4>Proceso de Compensación</h4>
-                                <ul>
-                                    <li>Análisis de estabilidad</li>
-                                    <li>Ajuste de lastre</li>
-                                    <li>Calibración de instrumentos</li>
-                                    <li>Pruebas de navegación</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img src="img/compensacion.png" alt="Compensación de Barcos">
                     </div>
                     <div class="service-info">
                         <div class="service-icon">
                             <i class="fas fa-ship"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Compensación y Estabilización de Embarcaciones</h3>
+                            <h3>Compensación de Agujas y Restauración de Compases</h3>
                             <p class="service-description">
-                                Servicio especializado de ajuste y calibración de embarcaciones para optimizar 
-                                su estabilidad, maniobrabilidad y cumplimiento de normativas de seguridad.
+                                Servicio de compensación de agujas magnéticas náuticas para tu barco. Restauración de compases de agujas magnéticas.
+                                No solo ajustamos, sino que también hacemos restauración de precisión
                             </p>
                             <div class="service-features">
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Análisis de estabilidad</span>
+                                    <span>Calibración profesional en puerto o a bordo</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Ajuste de lastre y distribución</span>
+                                    <span>Ajuste de desvío residual</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Calibración de instrumentos</span>
+                                    <span>Restauración estética y funcional de compases </span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Certificación de navegabilidad</span>
+                                    <span>Informe técnico de calibración</span>
                                 </div>
                             </div>
                         </div>
@@ -196,48 +183,37 @@
             <div class="service-detail" id="consultoria">
                 <div class="service-content">
                     <div class="service-info">
-                        <div class="service-icon">
+                        <div class="service-icon consultoria-icon">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Consultoría Marítima Especializada</h3>
+                            <h3>Presupuestos, Asesoría y Consultoría Marítima</h3>
                             <p class="service-description">
-                                Asesoramiento técnico especializado en normativas marítimas, certificaciones IMO 
-                                y optimización de procesos de seguridad para embarcaciones y empresas del sector.
+                                Ofrecemos un servicio de asesoramiento técnico-comercial, cercano y confiable. Elaboramos presupuestos dirigido a 
+                                flotas pesqueras, armadores, astilleros, jefes de compras y usuarios
                             </p>
                             <div class="service-features">
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Asesoramiento técnico especializado</span>
+                                    <span>Presupuestos sin compromiso</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Cumplimiento normativas IMO</span>
+                                    <span>Optimización de costes para flotas</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Certificaciones y homologaciones</span>
+                                    <span>Cumplimiento de normativas</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Formación y capacitación</span>
+                                    <span>Atención personalizada con soporte postventa</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="service-image">
-                        <img src="img/formulario.jpg" alt="Consultoría Marítima">
-                        <div class="service-overlay">
-                            <div class="overlay-content">
-                                <h4>Servicios de Consultoría</h4>
-                                <ul>
-                                    <li>Análisis de normativas</li>
-                                    <li>Auditorías de seguridad</li>
-                                    <li>Planificación estratégica</li>
-                                    <li>Formación del personal</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img src="img/asesoramiento.png" alt="Consultoría Marítima">
                     </div>
                 </div>
                 <div class="service-actions">
@@ -258,36 +234,36 @@
     <section class="process-section">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestro Proceso de Trabajo</h2>
-                <p>Cómo trabajamos para garantizar la máxima calidad en nuestros servicios</p>
+                <h2>Nuestro Método de Trabajo</h2>
+                <p>Un proceso transparente y certificado para asegurar la fiabilidad y calidad de cada servicio marítimo</p>
             </div>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Consulta Inicial</h3>
-                        <p>Evaluamos las necesidades específicas de tu embarcación y equipos</p>
+                        <p>Analizamos su embarcación y equipos para definir las necesidades reales de seguridad y mantenimiento</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>Inspección Detallada</h3>
-                        <p>Realizamos una revisión exhaustiva de todos los componentes</p>
+                        <p>Revisamos minuciosamente cada componente, siguiendo protocolos internacionales de seguridad marítima</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Mantenimiento</h3>
-                        <p>Ejecutamos las reparaciones y ajustes necesarios</p>
+                        <h3>Mantenimiento </h3>
+                        <p>Realizamos reparaciones preventivas y correctivas, utilizando piezas certificadas y técnicas especializadas</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Certificación</h3>
-                        <p>Emitimos la certificación oficial correspondiente</p>
+                        <h3>Presupuesto Personalizado</h3>
+                        <p>Elaboramos presupuestos a medida para astilleros, armadores, flotas pesqueras y buques, siempre con precios competitivos y condiciones adaptadas</p>
                     </div>
                 </div>
             </div>
@@ -298,8 +274,8 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>¿Necesitas mantenimiento para tu embarcación?</h2>
-                <p>Nuestro equipo de técnicos especializados está listo para ayudarte</p>
+                <h2>¿Su embarcación necesita revisión o mantenimiento certificado?</h2>
+                <p>Te ayudamos al cumplimiento total de normativas internacionales con nuestros servicios</p>
                 <div class="cta-actions">
                     <a href="contacto.html" class="btn btn-primary btn-large">
                         <i class="fas fa-calendar"></i>

@@ -15,11 +15,18 @@
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <h1><i class="fas fa-anchor"></i> ORIO y CIA</h1>
-                <span class="tagline">Seguridad Marítima</span>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo dibujo (1).png" alt="Logo ORIO Y CIA" class="logo-dibujo">
+                    <img src="img/logo escritura.png" alt="ORIO Y CIA" class="logo-escritura">
+                </a>
             </div>
             <nav class="main-nav">
-                <ul class="nav-list">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="index.html" class="nav-link">Inicio</a></li>
                     <li class="dropdown">
                         <a href="productos.html" class="nav-link">Productos <i class="fas fa-chevron-down"></i></a>
@@ -32,13 +39,7 @@
                             <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="servicios.html" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
-                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="quienes.html" class="nav-link active">Sobre Nosotros</a></li>
                     <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
@@ -52,161 +53,49 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="about-hero">
+    <section class="category-hero">
         <div class="container">
             <div class="hero-badge">
                 <i class="fas fa-users"></i>
                 <span>Nuestra Historia</span>
             </div>
-            <h1 class="hero-title">Sobre <span class="highlight">ORIO y CIA</span></h1>
-            <p class="hero-description">
-                Más de 30 años de experiencia en seguridad marítima, ofreciendo productos y servicios 
-                de la más alta calidad para garantizar la protección en el mar.
-            </p>
+            <h1 class="hero-title">Nuestra <span class="highlight">HISTORIA</span></h1>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about-section">
         <div class="container">
+            <!-- Puerto Banner -->
+            <div class="puerto-banner">
+                <img src="img/puerto.jpg" alt="Puerto de Vigo - Historia de ORIO y CIA">
+                <div class="banner-overlay">
+                    <h2>ORIO y CIA es una historia de tres generaciones unidas por el mar y el puerto de Vigo</h2>
+                </div>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Nuestra Historia</h2>
-                    <p>
-                        ORIO y CIA nació en 1990 con una misión clara: proporcionar equipos de seguridad marítima 
-                        de la más alta calidad para proteger vidas en el mar. Desde nuestros inicios, hemos crecido 
-                        hasta convertirnos en una referencia en el sector náutico, combinando experiencia, 
-                        innovación y compromiso con la excelencia.
+                     <p>
+                        Todo comenzó alrededor de 1960, cuando nuestro fundador decidió apostar por el sector marítimo en una época dorada para la pesca gallega. Vigo era entonces una auténtica potencia pesquera, con su puerto lleno de barcos. Fue en ese contexto donde nuestra empresa echó raíces, convirtiéndose en una de las primeras en especializarse en equipos de seguridad para las flota pesqueras.
                     </p>
                     <p>
-                        A lo largo de más de tres décadas, hemos desarrollado relaciones sólidas con armadores, 
-                        capitanes y empresas del sector marítimo, siempre manteniendo nuestro compromiso con 
-                        la calidad y el cumplimiento de las normativas internacionales más estrictas.
+                        En 1999, la segunda generación se incorporó al negocio, aportando nuevas ideas y energía. 
+                        Ahora los últimos años han traído cambios significativos para el sector. El puerto de Vigo, aunque sigue siendo importante, ya no cuenta con la intensa actividad pesquera de antaño. Menos barcos significan nuevos retos, pero también oportunidades para reinventarse y adaptarse a las necesidades actuales del sector marítimo.
+                    </p>
+                    <p>
+                        Hoy, la tercera generación se ha sumado al proyecto, aportando una perspectiva renovada y el mismo compromiso que ha caracterizado a ORIO y CIA desde sus inicios.
+                    </p>
+                    <p>
+                        <strong class="text-highlight-bold">Más de 60 años al servicio del sector marítimo, tres generaciones, una misma vocación: proteger vidas en el mar.</strong>
                     </p>
                 </div>
-                <div class="about-image">
-                    <img src="img/fotomain.png" alt="Equipo ORIO y CIA">
-                    <div class="image-overlay">
-                        <div class="overlay-stats">
-                            <div class="stat">
-                                <span class="stat-number">30+</span>
-                                <span class="stat-label">Años de experiencia</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">1000+</span>
-                                <span class="stat-label">Clientes satisfechos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Values -->
-    <section class="mission-values">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nuestra Misión y Valores</h2>
-                <p>Los principios que guían nuestro trabajo cada día</p>
-            </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Misión</h3>
-                    <p>Proporcionar equipos de seguridad marítima de la más alta calidad, garantizando la protección y tranquilidad de nuestros clientes en cada navegación.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Visión</h3>
-                    <p>Ser la empresa líder en seguridad marítima, reconocida por nuestra innovación, calidad y compromiso con la excelencia en el servicio.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Valores</h3>
-                    <p>Calidad, confiabilidad, innovación y compromiso con la seguridad marítima son los pilares fundamentales de nuestra empresa.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nuestro Equipo</h2>
-                <p>Profesionales especializados en seguridad marítima</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="img/fotomain.png" alt="Equipo Técnico">
-                    </div>
-                    <div class="member-info">
-                        <h3>Equipo Técnico Especializado</h3>
-                        <p class="member-role">Técnicos Certificados</p>
-                        <p>Nuestros técnicos cuentan con certificaciones IMO y más de 15 años de experiencia en mantenimiento de equipos de seguridad marítima.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="img/fotomain.png" alt="Equipo Comercial">
-                    </div>
-                    <div class="member-info">
-                        <h3>Equipo Comercial</h3>
-                        <p class="member-role">Asesores Especializados</p>
-                        <p>Nuestros asesores comerciales conocen profundamente el sector marítimo y te ayudarán a encontrar las mejores soluciones para tu embarcación.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Certifications Section -->
-    <section class="certifications-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Certificaciones y Acreditaciones</h2>
-                <p>Reconocimientos que avalan nuestra calidad y profesionalidad</p>
-            </div>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificación IMO</h3>
-                    <p>Reconocimiento oficial de la Organización Marítima Internacional para nuestros productos y servicios.</p>
-                </div>
-                <div class="certification-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Normativa SOLAS</h3>
-                    <p>Cumplimiento estricto de las normativas de seguridad de la vida en el mar.</p>
-                </div>
-                <div class="certification-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>ISO 9001</h3>
-                    <p>Sistema de gestión de calidad certificado según estándares internacionales.</p>
-                </div>
-                <div class="certification-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Reconocimiento del Sector</h3>
-                    <p>Premios y reconocimientos por nuestra contribución a la seguridad marítima.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -290,5 +179,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navList = document.getElementById('nav-list');
+            
+            if (mobileMenuToggle && navList) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navList.classList.toggle('mobile-menu-open');
+                    mobileMenuToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = navList.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navList.classList.remove('mobile-menu-open');
+                        mobileMenuToggle.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

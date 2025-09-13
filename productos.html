@@ -15,11 +15,18 @@
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <h1><i class="fas fa-anchor"></i> ORIO y CIA</h1>
-                <span class="tagline">Seguridad Marítima</span>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo dibujo (1).png" alt="Logo ORIO Y CIA" class="logo-dibujo">
+                    <img src="img/logo escritura.png" alt="ORIO Y CIA" class="logo-escritura">
+                </a>
             </div>
             <nav class="main-nav">
-                <ul class="nav-list">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="index.html" class="nav-link">Inicio</a></li>
                     <li class="dropdown">
                         <a href="productos.html" class="nav-link active">Productos <i class="fas fa-chevron-down"></i></a>
@@ -32,13 +39,7 @@
                             <li><a href="cartas-nauticas.html">Cartas Náuticas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="servicios.html" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="servicios.html#revision">Revisión Chalecos y Trajes</a></li>
-                            <li><a href="servicios.html#compensacion">Compensación Barcos</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="quienes.html" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
@@ -52,16 +53,30 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="products-hero">
+    <section class="category-hero">
         <div class="container">
             <div class="hero-badge">
                 <i class="fas fa-box"></i>
                 <span>Catálogo Completo</span>
             </div>
-            <h1 class="hero-title">Productos de <span class="highlight">Seguridad Marítima</span></h1>
+            <h1 class="hero-title">Productos <span class="highlight">Seguridad Marítima</span></h1>
             <p class="hero-description">
                 Descubre nuestra amplia gama de productos certificados y homologados para la máxima seguridad en el mar
             </p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-ship"></i>
+                    <span>Flotas pesqueras</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-city"></i>
+                    <span>Astilleros y puertos</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Precios personalizados</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -72,27 +87,26 @@
             <!-- Material de Salvamento -->
             <div class="product-category" id="salvamento">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon salvamento-icon">
                         <i class="fas fa-life-ring"></i>
                     </div>
                     <div class="category-info">
-                        <h3>Material de Salvamento</h3>
-                        <p>Equipos esenciales para la supervivencia de los barcos en el mar</p>
+                        <h3>Equipos de Salvamento</h3>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/psalvavidas.png" alt="Chalecos Salvavidas">
+                            <img src="img/salvamento maritimo index.png" alt="Material de Salvamento">
                             <div class="product-badge">Certificado IMO</div>
                         </div>
                         <div class="product-content">
-                            <h4>Chalecos Salvavidas</h4>
-                            <p>Chalecos inflables y tradicionales homologados según normativas SOLAS</p>
+                            <h4>Equipos de Salvamento Marítimo</h4>
+                            <p>Chalecos salvavidas, trajes de supervivencia, bengalas y equipos de emergencia certificados</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Certificación SOLAS</li>
-                                <li><i class="fas fa-check"></i> Material resistente al agua</li>
-                                <li><i class="fas fa-check"></i> Múltiples tallas disponibles</li>
+                                <li><i class="fas fa-check"></i> Certificación IMO/SOLAS</li>
+                                <li><i class="fas fa-check"></i> Aros salvavidas homologados</li>
+                                <li><i class="fas fa-check"></i> Trajes de supervivencia</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -106,27 +120,26 @@
             <!-- Pirotecnia Marítima -->
             <div class="product-category" id="pirotecnia">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon pirotecnia-icon">
                         <i class="fas fa-fire"></i>
                     </div>
                     <div class="category-info">
-                        <h3>Pirotecnia Marítima</h3>
-                        <p>Señales pirotécnicas de emergencia para situaciones marítimas críticas</p>
+                        <h3>Pirotécnia Naval</h3>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/pirotecnia.jpg" alt="Pirotecnia Marítima">
+                            <img src="img/pirotecnia index.png" alt="Pirotecnia Marítima">
                             <div class="product-badge">Certificado IMO</div>
                         </div>
                         <div class="product-content">
-                            <h4>Pirotecnia Marítima</h4>
-                            <p>Bengalas, cohetes y señales fumígenas certificadas IMO para emergencias marítimas</p>
+                            <h4>Bengalas Marítimas y Pirotécnia Naval</h4>
+                            <p>Bengalas homologadas IMO, cohetes de paracaídas SOLAS, botes de humo y kits completos</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Certificación IMO</li>
-                                <li><i class="fas fa-check"></i> Máxima visibilidad</li>
-                                <li><i class="fas fa-check"></i> Resistente al agua</li>
+                                <li><i class="fas fa-check"></i> Homologación IMO/SOLAS</li>
+                                <li><i class="fas fa-check"></i> Bengalas de 60 segundos</li>
+                                <li><i class="fas fa-check"></i> Cohetes de 300m altura</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -140,27 +153,26 @@
             <!-- Material Contra-incendios -->
             <div class="product-category" id="incendios">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon contraincendios-icon">
                         <i class="fas fa-fire-extinguisher"></i>
                     </div>
                     <div class="category-info">
-                        <h3>Material Contra-incendios</h3>
-                        <p>Sistemas de protección contra incendios para embarcaciones</p>
+                        <h3>Material ContraIncendios</h3>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/pincendios.png" alt="Extintores Marítimos">
+                            <img src="img/contraincendios index.png" alt="Material Contraincendios">
                             <div class="product-badge">Certificado IMO</div>
                         </div>
                         <div class="product-content">
-                            <h4>Extintores Marítimos</h4>
-                            <p>Extintores portátiles y fijos para embarcaciones de todo tipo</p>
+                            <h4>Material y Equipos ContraIncendios</h4>
+                            <p>Extintores, mangueras y equipos contraincendios certificados SOLAS/MED</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Certificación IMO</li>
-                                <li><i class="fas fa-check"></i> Resistente a la corrosión</li>
-                                <li><i class="fas fa-check"></i> Fácil mantenimiento</li>
+                                <li><i class="fas fa-check"></i> Homologación SOLAS/MED</li>
+                                <li><i class="fas fa-check"></i> Extintores marinos 1-6Kg</li>
+                                <li><i class="fas fa-check"></i> Mangueras racor Barcelona/Storz</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -174,27 +186,26 @@
             <!-- Señalización IMO -->
             <div class="product-category" id="senalizacion">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon etiquetas-icon">
                         <i class="fas fa-flag"></i>
                     </div>
                     <div class="category-info">
-                        <h3>Señalización IMO</h3>
-                        <p>Señales y equipos de comunicación conforme a normativas internacionales</p>
+                        <h3>Etiquetas IMO</h3>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/pimo.png" alt="Señales Marítimas">
+                            <img src="img/etiquetas IMO/etiquetas navegacion index.png" alt="Señalización IMO">
                             <div class="product-badge">Certificado IMO</div>
                         </div>
                         <div class="product-content">
-                            <h4>Señales Marítimas</h4>
-                            <p>Señales de socorro, luces de navegación y reflectores radar</p>
+                            <h4>Etiquetas IMO para Barcos y Náutica</h4>
+                            <p>Etiquetas de advertencia, señalización contra incendios, obligación de seguridad</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Normativa IMO</li>
-                                <li><i class="fas fa-check"></i> Alta visibilidad</li>
-                                <li><i class="fas fa-check"></i> Resistente al agua salada</li>
+                                <li><i class="fas fa-check"></i> Certificación IMO</li>
+                                <li><i class="fas fa-check"></i> Advertencia de Peligro</li>
+                                <li><i class="fas fa-check"></i> Contra Incendios</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -208,27 +219,26 @@
             <!-- Publicaciones Náuticas -->
             <div class="product-category" id="publicaciones">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon cartas-icon">
                         <i class="fas fa-book"></i>
                     </div>
                     <div class="category-info">
-                        <h3>Publicaciones Náuticas</h3>
-                        <p>Cartas náuticas, derroteros y guías para navegación segura</p>
+                        <h3>Cartas Náuticas</h3>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/pcartas.png" alt="Cartas Náuticas">
+                            <img src="img/cartas/cartas libros.png" alt="Cartas Náuticas">
                             <div class="product-badge">Actualizadas</div>
                         </div>
                         <div class="product-content">
-                            <h4>Cartas Náuticas</h4>
-                            <p>Cartas náuticas actualizadas y derroteros para navegación</p>
+                            <h4>Cartas Náuticas IHM</h4>
+                            <p>Cartas náuticas oficiales IHM, Admiralty inglesas y libros de navegación</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Información actualizada</li>
-                                <li><i class="fas fa-check"></i> Fácil lectura</li>
-                                <li><i class="fas fa-check"></i> Cobertura mundial</li>
+                                <li><i class="fas fa-check"></i> Distribuidor Oficial IHM</li>
+                                <li><i class="fas fa-check"></i> Cartas Admiralty Inglesas</li>
+                                <li><i class="fas fa-check"></i> +30 años flotas pesqueras</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -242,27 +252,26 @@
             <!-- Banderas del Mundo -->
             <div class="product-category" id="banderas">
                 <div class="category-header">
-                    <div class="category-icon">
+                    <div class="category-icon banderas-icon">
                         <i class="fas fa-flag-checkered"></i>
                     </div>
                     <div class="category-info">
                         <h3>Banderas del Mundo</h3>
-                        <p>Banderas marítimas, nacionales y de señales para embarcaciones</p>
                     </div>
                 </div>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/pbanderas.png" alt="Banderas Marítimas">
+                            <img src="img/banderas/corona.png" alt="Banderas Marítimas">
                             <div class="product-badge">Material Premium</div>
                         </div>
                         <div class="product-content">
-                            <h4>Banderas Marítimas</h4>
-                            <p>Banderas nacionales, de señales y de socorro para embarcaciones</p>
+                            <h4>Banderas del Mundo y Código de Señales</h4>
+                            <p>Banderas oficiales de todos los países, banderas de navegación obligatorias</p>
                             <ul class="product-features">
-                                <li><i class="fas fa-check"></i> Material resistente</li>
-                                <li><i class="fas fa-check"></i> Colores duraderos</li>
-                                <li><i class="fas fa-check"></i> Múltiples tamaños</li>
+                                <li><i class="fas fa-check"></i> Material Náutico Certificado</li>
+                                <li><i class="fas fa-check"></i> Todos los Países del Mundo</li>
+                                <li><i class="fas fa-check"></i> +30 años flotas pesqueras</li>
                             </ul>
                             <div class="product-actions">
                                 <a href="contacto.html" class="btn btn-primary">Cotizar</a>
@@ -272,6 +281,7 @@
                     </div>
                 </div>
             </div>
+
             </div>
         </div>
     </section>
@@ -358,5 +368,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navList = document.getElementById('nav-list');
+            
+            if (mobileMenuToggle && navList) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navList.classList.toggle('mobile-menu-open');
+                    mobileMenuToggle.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = navList.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navList.classList.remove('mobile-menu-open');
+                        mobileMenuToggle.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
