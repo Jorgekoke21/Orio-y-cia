@@ -4855,7 +4855,7 @@ body.quienes-theme .category-hero .hero-badge {
     
     /* H1 con imagen de fondo específica para móvil */
     .index .hero-title-mobile-bg {
-        background-image: url('img/imovil.png'); /* Nueva imagen para móvil */
+        background-image: url('img/imovil.PNG'); /* Nueva imagen para móvil */
         background-size: cover;
         background-position: center 30%;
         background-repeat: no-repeat;
